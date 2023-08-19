@@ -21,27 +21,33 @@ const Footer = () => {
                             </div>
                         ))}
                     </div>
-                    <div className=" mt-8 flex flex-1 justify-between flex-wrap lg:gap-10 gap-20 ">
-                        {footerLinks.map((sec) => (
-                            <div key={sec.title}>
-                                <h4 className="text-white font-montserrat leading-normal font-medium text-2xl">{sec.title}</h4>
-                                <ul>
-                                  {sec.links.map(link => <li key={link.name} className="mt-3 cursor-pointer text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray">
-                                    {link.name}
-                                  </li>)}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
+                </div>
+                <div className="mt-8 flex flex-1 justify-between flex-wrap lg:gap-10 gap-20 ">
+                    {footerLinks.map((sec) => (
+                        <div key={sec.title}>
+                            <h4 className="text-white font-montserrat leading-normal font-medium text-2xl">
+                                {sec.title}
+                            </h4>
+                            <ul>
+                                {sec.links.map((link) => (
+                                    <li
+                                        key={link.name}
+                                        className="mt-3 cursor-pointer text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray">
+                                        {link.name}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
                 </div>
             </div>
 
             <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
-                  <div className="flex flex-1 justify-start items-center gap-2  font-montserrat cursor-pointer">
-                    <img src={copyrightSign} alt="copyright" width={20} height={20} className="rounder-full m-0"/>
+                <div className="flex flex-1 justify-start items-center gap-2  font-montserrat cursor-pointer">
+                    <img src={copyrightSign} alt="copyright" width={20} height={20} className="rounder-full m-0" />
                     <p>Copyright . All right reserved </p>
-                  </div>
-                  <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
+                </div>
+                <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
             </div>
         </footer>
     );
