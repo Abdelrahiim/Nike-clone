@@ -1,3 +1,4 @@
+import { Product } from "../../types";
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import {
     bigShoe1,
@@ -42,7 +43,7 @@ export const statistics = [
     { value: "250k+", label: "Customers" },
 ];
 
-export const products = [
+export const products:Product[] = [
     {
         imgURL: shoe4,
         name: "Nike Air Jordan-01",
