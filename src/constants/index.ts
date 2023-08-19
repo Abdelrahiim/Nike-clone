@@ -1,4 +1,4 @@
-import { Product } from "../../types";
+import { Product, Review, Service } from "../../types";
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import {
     bigShoe1,
@@ -66,25 +66,27 @@ export const products:Product[] = [
     },
 ];
 
-export const services = [
-    {
+export const services:Service[] = [
+    {   id:1,
         imgURL: truckFast,
         label: "Free shipping",
         subtext: "Enjoy seamless shopping with our complimentary shipping service.",
     },
     {
+        id:2,
         imgURL: shieldTick,
         label: "Secure Payment",
         subtext: "Experience worry-free transactions with our secure payment options.",
     },
     {
+        id:3,
         imgURL: support,
         label: "Love to help you",
         subtext: "Our dedicated team is here to assist you every step of the way.",
     },
 ];
 
-export const reviews = [
+export const reviews:Review[] = [
     {
         imgURL: customer1,
         customerName: "Morich Brown",

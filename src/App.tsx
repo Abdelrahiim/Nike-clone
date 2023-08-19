@@ -1,5 +1,5 @@
 import Nav from "./components/Nav";
-import { CustomerReviews, Footer, Hero, PopularProducts, Services, Subscribe, SuperQuality } from "./sections";
+import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from "./sections";
 
 const App = () => (
     <>
@@ -17,16 +17,19 @@ const App = () => (
             <section className="padding-x py-10 ">
                 <Services />
             </section>
+            <section className="padding ">
+                <SpecialOffer />
+            </section>
             <section className="padding bg-pale-blue">
                 <CustomerReviews />
             </section>
             <section className="padding-x sm:py-32 py16 w-full">
                 <Subscribe />
             </section>
-        </main>
-        <footer className="bg-black text-white-400 padding-x padding-t pb-8  text-">
+        <section className="bg-black text-white-400 padding-x padding-t pb-8  text-">
             <Footer />
-        </footer>
+        </section>
+        </main>
     </>
 );
 
